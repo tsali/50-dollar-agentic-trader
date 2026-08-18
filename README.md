@@ -37,6 +37,8 @@ These are the guardrails *this* agent happens to use — example choices, not go
 
 See **[TRADES.md](TRADES.md)** for every trade, **[LOG.md](LOG.md)** for the weekly value history, and **[CHANGELOG.md](CHANGELOG.md)** for logic changes.
 
+**Updated automatically every Saturday.** A scheduled job pulls the week's real fills and account value straight from the brokerage, writes a self-contained recap to **[`weeks/`](weeks/)** (one file per week, so nothing bloats), refreshes the summaries above, and commits it. No numbers are typed by hand — the git history *is* the tamper-evident record. Account identifiers and order IDs are never published; only the trade economics are.
+
 ## How the Agent Decides
 
 There's no single rigid strategy — **the agent does whatever it judges best for each situation.** It can buy and hold, or actively trade in and out, choosing among different decision logics based on what it reads:
