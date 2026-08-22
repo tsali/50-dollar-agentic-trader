@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 27 · **Realized P/L:** +$0.49 · **Open unrealized:** −$0.71 · **Net:** ≈ −$0.22 (from ~$50)
+**Started:** 2026-08-07 · **Trades to date:** 44 · **Realized P/L:** +$0.44 · **Open unrealized:** $0.00 (no open positions) · **Net:** ≈ +$0.44 (from ~$50)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -32,28 +32,52 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 24 | 2026-08-17 | 13:31 | SELL | MU   | 0.005634 | $1019.55 | $5.74 | +$0.29 |
 | 25 | 2026-08-17 | 13:52 | BUY  | MU   | 0.005954 | $1019.45 | $6.07 | |
 | 26 | 2026-08-18 | 09:31 | SELL | MU   | 0.005954 | $973.00 | $5.79 | −$0.28 |
+| 27 | 2026-08-18 | 09:52 | SELL | NVDA | 0.046975 | $220.28 | $10.35 | −$0.15 |
+| 28 | 2026-08-18 | 14:31 | SELL | ASTS | 0.120908 | $67.37 | $8.15 | −$0.53 |
+| 29 | 2026-08-19 | 10:11 | BUY  | MRVL | 0.065431 | $228.33 | $14.94 | |
+| 30 | 2026-08-19 | 11:22 | BUY  | NNE  | 0.553149 | $18.91 | $10.46 | |
+| 31 | 2026-08-19 | 11:44 | BUY  | WEN  | 0.828466 | $8.84 | $7.32 | |
+| 32 | 2026-08-19 | 13:01 | SELL | MRVL | 0.065431 | $235.25 | $15.39 | +$0.45 |
+| 33 | 2026-08-19 | 14:11 | SELL | NNE  | 0.553149 | $18.85 | $10.43 | −$0.03 |
+| 34 | 2026-08-19 | 14:51 | SELL | WEN  | 0.828466 | $8.86 | $7.34 | +$0.02 |
+| 35 | 2026-08-20 | 09:42 | BUY  | MU   | 0.015942 | $945.89 | $15.08 | |
+| 36 | 2026-08-20 | 10:22 | BUY  | MRVL | 0.043573 | $242.12 | $10.55 | |
+| 37 | 2026-08-20 | 15:32 | BUY  | CBOE | 0.025017 | $295.39 | $7.39 | |
+| 38 | 2026-08-21 | 10:03 | SELL | MRVL | 0.043573 | $243.34 | $10.60 | +$0.05 |
+| 39 | 2026-08-21 | 10:12 | BUY  | MRNA | 0.033589 | $153.92 | $5.17 | |
+| 40 | 2026-08-21 | 11:32 | SELL | MRNA | 0.033589 | $147.87 | $4.97 | −$0.20 |
+| 41 | 2026-08-21 | 12:22 | BUY  | MRK  | 0.023681 | $152.87 | $3.62 | |
+| 42 | 2026-08-21 | 13:31 | SELL | MRK  | 0.023681 | $151.47 | $3.59 | −$0.03 |
+| 43 | 2026-08-21 | 15:21 | SELL | CBOE | 0.025017 | $300.01 | $7.51 | +$0.12 |
+| 44 | 2026-08-21 | 15:52 | SELL | MU   | 0.015942 | $961.51 | $15.33 | +$0.25 |
 
 ## Realized P/L by name (closed positions)
 
 | Symbol | Realized P/L |
 |:------:|:------------:|
 | SMCI | **+$1.07** |
+| MRVL (2 round-trips) | +$0.50 |
 | ZETA | +$0.35 |
-| MU (round-trips) | +$0.01 |
-| PLTR (net of 4 round-trips) | +$0.05 |
+| MU (round-trips) | +$0.26 |
+| CBOE | +$0.12 |
 | RKLB | +$0.09 |
+| PLTR (net of 4 round-trips) | +$0.05 |
+| WEN | +$0.02 |
+| NNE | −$0.03 |
+| MRK | −$0.03 |
+| NVDA | −$0.15 |
+| MRNA | −$0.20 |
 | AA | −$0.28 |
 | SMR | −$0.29 |
 | NBIS | −$0.51 |
-| **Total realized** | **+$0.49** |
+| ASTS | −$0.53 |
+| **Total realized** | **+$0.44** |
 
-## Open positions (as of 2026-08-18)
+## Open positions (as of 2026-08-22)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| NVDA | 0.046975 | $223.52 | ~$220.59 | −$0.14 |
-| ASTS | 0.120908 | $71.79 | ~$67.10 | −$0.57 |
-| Cash (dry powder) | — | — | ~$31.31 | — |
+| None — 100% cash | — | — | ~$50.44 | — |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -66,9 +90,14 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 - **ZETA** (+$0.35) / **RKLB** (+$0.09) — momentum entries with stops/targets, taken off for a gain.
 - **AA** (−$0.28) — entered on a setup that didn't follow through; stopped/exited small.
 - **MU** (2 round-trips, ≈ +$0.01) — sell-high/buy-low attempts on a high-priced name; roughly a wash.
-- **NVDA** *(open)* — core AI-momentum name, bought at inception and held; currently a hair below cost.
-- **ASTS** *(open)* — reddit hype + above a rising 20d SMA + intact uptrend, "not a falling knife"; held; currently a hair below cost.
+- **NVDA** (−$0.15, closed) — core AI-momentum name, bought at inception and held ~11 days; sold 2026-08-18 a hair below cost.
+- **ASTS** (−$0.53, closed) — reddit hype + intact uptrend at entry; didn't hold, sold 2026-08-18 for the largest single loss so far.
+- **MRVL** (+$0.50) — two profitable same-day round-trips (≈228→235, ≈242→243); the standout of the 08-19 → 08-21 rotation.
+- **MU** (net +$0.26 across round-trips) — repeated sell-high/buy-low on a high-priced name; the 08-20→08-21 leg (≈946→962) added +$0.25.
+- **CBOE** (+$0.12) — bought ≈295, sold ≈300 the next session.
+- **WEN** (+$0.02) / **NNE** (−$0.03) / **MRK** (−$0.03) — small same-day round-trips, essentially scratches.
+- **MRNA** (−$0.20) — quick exit when the intraday move faded; cut small.
 
-**The pattern:** screen for hype + technical confirmation → enter with a stop and target → **trail the stop up on winners, cut losers at the stop.** It let SMCI run, took quick gains on ZETA/RKLB, and cut AA/NBIS/SMR when they didn't work. That's the discipline the paper is really documenting.
+**The pattern:** screen for hype + technical confirmation → enter with a stop and target → **trail the stop up on winners, cut losers at the stop.** It let SMCI run, took quick gains on MRVL/ZETA/RKLB/MU/CBOE, and cut AA/NBIS/SMR/MRNA/ASTS when they didn't work. That's the discipline the paper is really documenting.
 
-**Takeaway:** the agent's *closed* trades are net green (+$0.49) — SMCI was the standout win — but both currently-open positions (NVDA, ASTS) are down a hair, leaving the account at ~−$0.22 overall. Its first honest red, right on schedule.
+**Takeaway:** with the two inception holds (NVDA, ASTS) now closed, *all* trades are realized — net **+$0.44** from ~$50, so the account sits at ~$50.44 with **no open positions (100% cash)**. SMCI (+$1.07) and MRVL (+$0.50) are the biggest wins; ASTS (−$0.53) and NBIS (−$0.51) the biggest losses. Sitting fully flat is itself worth flagging — the dry-powder rule is about keeping *some* cash while invested, not going 100% to the sidelines.
