@@ -7,8 +7,9 @@ A running, honest record of the $50 Agentic Trader's account value. Updated week
 | Start | 2026-08-07 | ~$50.00 | — | — | — | (funding + first buys) | Inception. First trades: PLTR, then NVDA. |
 | 1 | 2026-08-18 | ~$49.78 | −0.4% | — | — | NVDA, ASTS + ~$31 cash (dry powder) | First small red after ~1.5 weeks green. Realized trades net +$0.49; open positions −$0.71. Benchmark tracking starts now. |
 | 2 | 2026-08-22 | ~$50.44 | +0.9% | — | — | None — 100% cash | Closed both inception holds (NVDA, ASTS) at small losses, then rotated through same-day round-trips (MRVL/MU/CBOE green; MRNA/MRK/NNE/WEN ~flat). Back to green on realized gains; ended fully in cash. [detail](weeks/2026-08-22.md) |
+| 3 | 2026-08-29 | ~$50.00 | +0.0% | −1.35% | −1.29% | NVDA, META (~$16 equity + ~$34 cash) | 20 fills, 9 round-trips closed for net −$0.17 realized. HOOD cut −$0.48 then made +$0.19 on a re-entry; BMNR +$0.29 / TEM +$0.14 green; AG −$0.29 red. Ended holding two modestly-underwater names; lagged a rising market. [detail](weeks/2026-08-29.md) |
 
-\* Benchmark comparison (vs SPY / QQQ) is measured from the 2026-08-18 mark forward — we didn't capture index levels at inception. No index mark was actually stored at the 08-18 baseline, so the honest comparison re-baselines at 2026-08-22 (SPY 765.69 / QQQ 713.40) and starts forward from there.
+\* Benchmark comparison (vs SPY / QQQ) is measured from the 2026-08-22 baseline forward (SPY 765.69 / QQQ 713.40) — no index mark was stored at the 08-18 inception baseline, so the comparison re-baselines at 08-22. The vs-SPY/QQQ figures show the account's return *minus* the index's return over the same window (a percentage-point gap), not the index's own move.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 44 · **Realized P/L:** +$0.44 · **Open unrealized:** $0.00 (no open positions) · **Net:** ≈ +$0.44 (from ~$50)
+**Started:** 2026-08-07 · **Trades to date:** 64 · **Realized P/L:** +$0.27 · **Open unrealized:** −$0.28 (NVDA, META) · **Net:** ≈ −$0.01 (account ~$50.00)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -50,6 +50,26 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 42 | 2026-08-21 | 13:31 | SELL | MRK  | 0.023681 | $151.47 | $3.59 | −$0.03 |
 | 43 | 2026-08-21 | 15:21 | SELL | CBOE | 0.025017 | $300.01 | $7.51 | +$0.12 |
 | 44 | 2026-08-21 | 15:52 | SELL | MU   | 0.015942 | $961.51 | $15.33 | +$0.25 |
+| 45 | 2026-08-24 | 11:12 | BUY  | MSTR | 0.120231 | $125.84 | $15.13 | |
+| 46 | 2026-08-24 | 11:21 | BUY  | HOOD | 0.097655 | $108.44 | $10.59 | |
+| 47 | 2026-08-24 | 14:42 | BUY  | BMNR | 0.306739 | $24.19 | $7.42 | |
+| 48 | 2026-08-24 | 15:41 | SELL | HOOD | 0.097655 | $103.51 | $10.11 | −$0.48 |
+| 49 | 2026-08-25 | 11:12 | BUY  | HOOD | 0.075285 | $109.18 | $8.22 | |
+| 50 | 2026-08-25 | 12:41 | SELL | BMNR | 0.306739 | $25.13 | $7.71 | +$0.29 |
+| 51 | 2026-08-25 | 13:33 | BUY  | NBIS | 0.026171 | $220.09 | $5.76 | |
+| 52 | 2026-08-25 | 15:11 | SELL | HOOD | 0.075285 | $111.74 | $8.41 | +$0.19 |
+| 53 | 2026-08-25 | 15:13 | BUY  | MU   | 0.004333 | $929.99 | $4.03 | |
+| 54 | 2026-08-25 | 15:31 | SELL | MSTR | 0.120231 | $126.77 | $15.24 | +$0.11 |
+| 55 | 2026-08-26 | 11:01 | SELL | NBIS | 0.026171 | $215.40 | $5.64 | −$0.12 |
+| 56 | 2026-08-26 | 11:12 | BUY  | META | 0.020951 | $583.72 | $12.23 | *(open)* |
+| 57 | 2026-08-26 | 15:03 | BUY  | TEM  | 0.123538 | $69.29 | $8.56 | |
+| 58 | 2026-08-27 | 11:01 | SELL | MU   | 0.004333 | $920.89 | $3.99 | −$0.04 |
+| 59 | 2026-08-27 | 11:03 | BUY  | NVDA | 0.033857 | $226.83 | $7.68 | |
+| 60 | 2026-08-27 | 14:02 | SELL | NVDA | 0.033857 | $227.85 | $7.71 | +$0.03 |
+| 61 | 2026-08-27 | 14:23 | BUY  | AG   | 0.248270 | $21.67 | $5.38 | |
+| 62 | 2026-08-27 | 14:41 | SELL | TEM  | 0.123538 | $70.45 | $8.70 | +$0.14 |
+| 63 | 2026-08-27 | 15:21 | BUY  | NVDA | 0.016602 | $227.07 | $3.77 | *(open)* |
+| 64 | 2026-08-28 | 14:11 | SELL | AG   | 0.248270 | $20.49 | $5.09 | −$0.29 |
 
 ## Realized P/L by name (closed positions)
 
@@ -58,26 +78,33 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | SMCI | **+$1.07** |
 | MRVL (2 round-trips) | +$0.50 |
 | ZETA | +$0.35 |
-| MU (round-trips) | +$0.26 |
+| BMNR | +$0.29 |
+| MU (round-trips) | +$0.22 |
+| TEM | +$0.14 |
 | CBOE | +$0.12 |
+| MSTR | +$0.11 |
 | RKLB | +$0.09 |
 | PLTR (net of 4 round-trips) | +$0.05 |
 | WEN | +$0.02 |
+| NVDA (round-trips, closed portion) | −$0.12 |
 | NNE | −$0.03 |
 | MRK | −$0.03 |
-| NVDA | −$0.15 |
 | MRNA | −$0.20 |
 | AA | −$0.28 |
+| HOOD (2 round-trips) | −$0.29 |
+| AG | −$0.29 |
 | SMR | −$0.29 |
-| NBIS | −$0.51 |
 | ASTS | −$0.53 |
-| **Total realized** | **+$0.44** |
+| NBIS (2 round-trips) | −$0.63 |
+| **Total realized** | **+$0.27** |
 
-## Open positions (as of 2026-08-22)
+## Open positions (as of 2026-08-29)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| None — 100% cash | — | — | ~$50.44 | — |
+| NVDA | 0.016602 | ~$3.77 | ~$3.61 | −$0.16 |
+| META | 0.020951 | ~$12.23 | ~$12.11 | −$0.12 |
+| **Total** | | **~$16.00** | **~$15.73** | **−$0.28** |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -100,4 +127,4 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 
 **The pattern:** screen for hype + technical confirmation → enter with a stop and target → **trail the stop up on winners, cut losers at the stop.** It let SMCI run, took quick gains on MRVL/ZETA/RKLB/MU/CBOE, and cut AA/NBIS/SMR/MRNA/ASTS when they didn't work. That's the discipline the paper is really documenting.
 
-**Takeaway:** with the two inception holds (NVDA, ASTS) now closed, *all* trades are realized — net **+$0.44** from ~$50, so the account sits at ~$50.44 with **no open positions (100% cash)**. SMCI (+$1.07) and MRVL (+$0.50) are the biggest wins; ASTS (−$0.53) and NBIS (−$0.51) the biggest losses. Sitting fully flat is itself worth flagging — the dry-powder rule is about keeping *some* cash while invested, not going 100% to the sidelines.
+**Takeaway (through 2026-08-29):** cumulative realized is **+$0.27** across all closed round-trips; with two open holds (NVDA, META) carrying −$0.28 unrealized, the account sits at ~$50.00 — essentially flat from the $50 start. SMCI (+$1.07) and MRVL (+$0.50) remain the biggest wins; NBIS (−$0.63 across its round-trips) and ASTS (−$0.53) the biggest losses. Week 3 (08-24→08-29) was the busiest yet — 20 fills, 9 round-trips for −$0.17 net — and it ended *holding* two names rather than sitting flat, back in the spirit of the dry-powder rule (some cash, ~$34, alongside ~$16 of equity).
