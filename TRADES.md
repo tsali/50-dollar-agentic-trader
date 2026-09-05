@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 64 · **Realized P/L:** +$0.27 · **Open unrealized:** −$0.28 (NVDA, META) · **Net:** ≈ −$0.01 (account ~$50.00)
+**Started:** 2026-08-07 · **Trades to date:** 75 · **Realized P/L:** +$0.09 · **Open unrealized:** +$0.06 (DELL, IREN, TSM) · **Net:** ≈ +$0.15 (account ~$50.16)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -70,23 +70,35 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 62 | 2026-08-27 | 14:41 | SELL | TEM  | 0.123538 | $70.45 | $8.70 | +$0.14 |
 | 63 | 2026-08-27 | 15:21 | BUY  | NVDA | 0.016602 | $227.07 | $3.77 | *(open)* |
 | 64 | 2026-08-28 | 14:11 | SELL | AG   | 0.248270 | $20.49 | $5.09 | −$0.29 |
+| 65 | 2026-08-31 | 09:42 | BUY  | MU   | 0.010909 | $942.30 | $10.28 | |
+| 66 | 2026-09-01 | 09:31 | SELL | META | 0.020951 | $557.95 | $11.69 | −$0.54 |
+| 67 | 2026-09-01 | 10:23 | BUY  | CRM  | 0.027780 | $259.17 | $7.20 | |
+| 68 | 2026-09-03 | 15:11 | SELL | CRM  | 0.027780 | $265.60 | $7.38 | +$0.18 |
+| 69 | 2026-09-03 | 15:23 | BUY  | TSLA | 0.022422 | $380.86 | $8.54 | |
+| 70 | 2026-09-04 | 09:52 | SELL | TSLA | 0.022422 | $357.51 | $8.02 | −$0.52 |
+| 71 | 2026-09-04 | 10:02 | BUY  | DELL | 0.015604 | $525.50 | $8.20 | *(open)* |
+| 72 | 2026-09-04 | 11:31 | SELL | NVDA | 0.016602 | $231.55 | $3.84 | +$0.07 |
+| 73 | 2026-09-04 | 11:33 | BUY  | IREN | 0.131837 | $43.54 | $5.74 | *(open)* |
+| 74 | 2026-09-04 | 13:11 | SELL | MU   | 0.010909 | $1000.19 | $10.91 | +$0.63 |
+| 75 | 2026-09-04 | 13:23 | BUY  | TSM  | 0.009376 | $427.68 | $4.01 | *(open)* |
 
 ## Realized P/L by name (closed positions)
 
 | Symbol | Realized P/L |
 |:------:|:------------:|
 | SMCI | **+$1.07** |
+| MU (round-trips) | +$0.85 |
 | MRVL (2 round-trips) | +$0.50 |
 | ZETA | +$0.35 |
 | BMNR | +$0.29 |
-| MU (round-trips) | +$0.22 |
+| CRM | +$0.18 |
 | TEM | +$0.14 |
 | CBOE | +$0.12 |
 | MSTR | +$0.11 |
 | RKLB | +$0.09 |
+| NVDA (round-trips, closed) | −$0.05 |
 | PLTR (net of 4 round-trips) | +$0.05 |
 | WEN | +$0.02 |
-| NVDA (round-trips, closed portion) | −$0.12 |
 | NNE | −$0.03 |
 | MRK | −$0.03 |
 | MRNA | −$0.20 |
@@ -94,17 +106,20 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | HOOD (2 round-trips) | −$0.29 |
 | AG | −$0.29 |
 | SMR | −$0.29 |
+| TSLA | −$0.52 |
 | ASTS | −$0.53 |
+| META | −$0.54 |
 | NBIS (2 round-trips) | −$0.63 |
-| **Total realized** | **+$0.27** |
+| **Total realized** | **+$0.09** |
 
-## Open positions (as of 2026-08-29)
+## Open positions (as of 2026-09-05)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| NVDA | 0.016602 | ~$3.77 | ~$3.61 | −$0.16 |
-| META | 0.020951 | ~$12.23 | ~$12.11 | −$0.12 |
-| **Total** | | **~$16.00** | **~$15.73** | **−$0.28** |
+| DELL | 0.015604 | ~$8.20 | ~$8.15 | −$0.05 |
+| IREN | 0.131837 | ~$5.74 | ~$5.85 | +$0.11 |
+| TSM  | 0.009376 | ~$4.01 | ~$4.01 | +$0.00 |
+| **Total** | | **~$17.95** | **~$18.02** | **+$0.06** |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -127,4 +142,12 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 
 **The pattern:** screen for hype + technical confirmation → enter with a stop and target → **trail the stop up on winners, cut losers at the stop.** It let SMCI run, took quick gains on MRVL/ZETA/RKLB/MU/CBOE, and cut AA/NBIS/SMR/MRNA/ASTS when they didn't work. That's the discipline the paper is really documenting.
 
-**Takeaway (through 2026-08-29):** cumulative realized is **+$0.27** across all closed round-trips; with two open holds (NVDA, META) carrying −$0.28 unrealized, the account sits at ~$50.00 — essentially flat from the $50 start. SMCI (+$1.07) and MRVL (+$0.50) remain the biggest wins; NBIS (−$0.63 across its round-trips) and ASTS (−$0.53) the biggest losses. Week 3 (08-24→08-29) was the busiest yet — 20 fills, 9 round-trips for −$0.17 net — and it ended *holding* two names rather than sitting flat, back in the spirit of the dry-powder rule (some cash, ~$34, alongside ~$16 of equity).
+### Week 4 (2026-08-31 → 2026-09-05)
+- **MU** (this week +$0.63) — the high-priced sell-high/buy-low pattern working again: bought ≈$942 on 08-31, sold ≈$1,000 on 09-04. Lifts MU's cumulative round-trip P/L to +$0.85, now the account's second-best name.
+- **CRM** (+$0.18) — momentum entry ≈$259, off two sessions later ≈$266.
+- **TSLA** (−$0.52) — bought ≈$381 on 09-03 momentum; faded and cut ≈$357 the next morning at the stop — the week's biggest loss.
+- **META** (−$0.54, closed) — the 08-26 hold (bought $583.72) never recovered; closed ≈$558 to stop the bleed.
+- **NVDA** (this leg +$0.07, name now −$0.05 cumulative) — closed the 08-27 hold ≈$232 for a small gain, flattening NVDA's overall book.
+- **DELL / IREN / TSM** — three new end-of-week holds funded from the closed names; IREN (bitcoin-miner / AI-datacenter) leads them +$0.11.
+
+**Takeaway (through 2026-09-05):** cumulative realized is **+$0.09** across all closed round-trips; with three open holds (DELL, IREN, TSM) carrying +$0.06 unrealized, the account sits at ~$50.16 — up ~0.3% from the $50 start. SMCI (+$1.07) and MU (+$0.85) are the biggest wins; NBIS (−$0.63), META (−$0.54), ASTS (−$0.53) and TSLA (−$0.52) the biggest losses. Week 4 (08-31→09-05) was 11 fills, 5 round-trips for −$0.18 net — it closed both prior-week carries and rotated into three fresh names, edging the account up but still trailing SPY/QQQ over the benchmark window.
