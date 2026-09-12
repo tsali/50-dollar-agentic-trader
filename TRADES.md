@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 75 · **Realized P/L:** +$0.09 · **Open unrealized:** +$0.06 (DELL, IREN, TSM) · **Net:** ≈ +$0.15 (account ~$50.16)
+**Started:** 2026-08-07 · **Trades to date:** 89 · **Realized P/L:** +$0.32 · **Open unrealized:** −$0.38 (MU, TSLA, INTC) · **Net:** ≈ −$0.06 (account ~$49.94)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -81,6 +81,20 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 73 | 2026-09-04 | 11:33 | BUY  | IREN | 0.131837 | $43.54 | $5.74 | *(open)* |
 | 74 | 2026-09-04 | 13:11 | SELL | MU   | 0.010909 | $1000.19 | $10.91 | +$0.63 |
 | 75 | 2026-09-04 | 13:23 | BUY  | TSM  | 0.009376 | $427.68 | $4.01 | *(open)* |
+| 76 | 2026-09-08 | 12:21 | SELL | IREN | 0.131837 | $48.35   | $6.38  | +$0.64 |
+| 77 | 2026-09-08 | 12:23 | BUY  | NBIS | 0.038657 | $249.37  | $9.64  | |
+| 78 | 2026-09-08 | 14:01 | SELL | NBIS | 0.038657 | $245.87  | $9.51  | −$0.14 |
+| 79 | 2026-09-08 | 14:12 | BUY  | NBIS | 0.027224 | $247.94  | $6.75  | |
+| 80 | 2026-09-08 | 15:11 | SELL | NBIS | 0.027224 | $246.51  | $6.71  | −$0.04 |
+| 81 | 2026-09-08 | 15:13 | BUY  | TSLA | 0.012848 | $367.35  | $4.72  | *(open)* |
+| 82 | 2026-09-09 | 09:31 | SELL | TSM  | 0.009376 | $436.34  | $4.09  | +$0.08 |
+| 83 | 2026-09-09 | 09:33 | BUY  | HOOD | 0.083693 | $120.44  | $10.08 | |
+| 84 | 2026-09-09 | 11:11 | SELL | DELL | 0.015604 | $548.53  | $8.56  | +$0.36 |
+| 85 | 2026-09-09 | 11:13 | BUY  | MU   | 0.006924 | $1019.62 | $7.06  | *(open)* |
+| 86 | 2026-09-11 | 09:41 | SELL | HOOD | 0.083693 | $111.80  | $9.36  | −$0.72 |
+| 87 | 2026-09-11 | 09:51 | BUY  | AAPL | 0.026266 | $332.74  | $8.74  | |
+| 88 | 2026-09-11 | 11:41 | SELL | AAPL | 0.026266 | $334.96  | $8.80  | +$0.06 |
+| 89 | 2026-09-11 | 11:52 | BUY  | INTC | 0.058920 | $103.70  | $6.11  | *(open)* |
 
 ## Realized P/L by name (closed positions)
 
@@ -88,7 +102,9 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 |:------:|:------------:|
 | SMCI | **+$1.07** |
 | MU (round-trips) | +$0.85 |
+| IREN | +$0.64 |
 | MRVL (2 round-trips) | +$0.50 |
+| DELL | +$0.36 |
 | ZETA | +$0.35 |
 | BMNR | +$0.29 |
 | CRM | +$0.18 |
@@ -96,6 +112,8 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | CBOE | +$0.12 |
 | MSTR | +$0.11 |
 | RKLB | +$0.09 |
+| TSM | +$0.08 |
+| AAPL | +$0.06 |
 | NVDA (round-trips, closed) | −$0.05 |
 | PLTR (net of 4 round-trips) | +$0.05 |
 | WEN | +$0.02 |
@@ -103,23 +121,23 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | MRK | −$0.03 |
 | MRNA | −$0.20 |
 | AA | −$0.28 |
-| HOOD (2 round-trips) | −$0.29 |
+| HOOD (3 round-trips) | −$1.01 |
 | AG | −$0.29 |
 | SMR | −$0.29 |
 | TSLA | −$0.52 |
 | ASTS | −$0.53 |
 | META | −$0.54 |
-| NBIS (2 round-trips) | −$0.63 |
-| **Total realized** | **+$0.09** |
+| NBIS (4 round-trips) | −$0.81 |
+| **Total realized** | **+$0.32** |
 
-## Open positions (as of 2026-09-05)
+## Open positions (as of 2026-09-12)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| DELL | 0.015604 | ~$8.20 | ~$8.15 | −$0.05 |
-| IREN | 0.131837 | ~$5.74 | ~$5.85 | +$0.11 |
-| TSM  | 0.009376 | ~$4.01 | ~$4.01 | +$0.00 |
-| **Total** | | **~$17.95** | **~$18.02** | **+$0.06** |
+| MU   | 0.006924 | ~$7.06 | ~$6.75 | −$0.31 |
+| TSLA | 0.012848 | ~$4.72 | ~$4.70 | −$0.02 |
+| INTC | 0.058920 | ~$6.11 | ~$6.06 | −$0.05 |
+| **Total** | | **~$17.89** | **~$17.51** | **−$0.38** |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -151,3 +169,14 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 - **DELL / IREN / TSM** — three new end-of-week holds funded from the closed names; IREN (bitcoin-miner / AI-datacenter) leads them +$0.11.
 
 **Takeaway (through 2026-09-05):** cumulative realized is **+$0.09** across all closed round-trips; with three open holds (DELL, IREN, TSM) carrying +$0.06 unrealized, the account sits at ~$50.16 — up ~0.3% from the $50 start. SMCI (+$1.07) and MU (+$0.85) are the biggest wins; NBIS (−$0.63), META (−$0.54), ASTS (−$0.53) and TSLA (−$0.52) the biggest losses. Week 4 (08-31→09-05) was 11 fills, 5 round-trips for −$0.18 net — it closed both prior-week carries and rotated into three fresh names, edging the account up but still trailing SPY/QQQ over the benchmark window.
+
+### Week 5 (2026-09-07 → 2026-09-12)
+- **IREN** (+$0.64) — the carried-in hold (bought 09-04 ~$43.54) rode bitcoin-miner / AI-datacenter momentum higher and closed 09-08 ~$48.35; the week's best trade and the largest single winner outside SMCI/MU.
+- **DELL** (+$0.36) — prior-week hold (bought ~$525.50) sold 09-09 ~$548.53 into strength.
+- **TSM** (+$0.08) — prior-week hold (bought ~$427.68) closed 09-09 ~$436.34 for a small gain; all three carried-in holds exited green.
+- **NBIS** (this week −$0.18 across two round-trips; name now −$0.81) — two same-day attempts on 09-08 (~$249→$246 and ~$248→$247) both faded intraday and were cut small — NBIS remains the account's worst name cumulatively.
+- **HOOD** (this week −$0.72; name now −$1.01 across three round-trips) — bought 09-09 ~$120.44, cut 09-11 ~$111.80 after a ~7% slide — the week's biggest loss and now the account's worst cumulative name.
+- **AAPL** (+$0.06) — a quick same-day round-trip 09-11 (~$332.74 → $334.96).
+- **MU / TSLA / INTC** — three new end-of-week holds funded from the closed names; all three sit slightly underwater at Friday's mark (−$0.38 combined).
+
+**Takeaway (through 2026-09-12):** cumulative realized rises to **+$0.32** — Week 5 was the best trading week yet on realized P/L (+$0.23, 14 fills, 7 round-trips, 4 winners / 3 losers). But the three fresh holds (MU, TSLA, INTC) carry −$0.38 unrealized, so net sits at ≈ −$0.06 and the account dipped just under the line to ~$49.94 (−0.11% vs the $50 start), still trailing SPY and QQQ over the benchmark window. The realized book keeps grinding positive; the open-position marks are what pulled the headline value below $50.
