@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 89 · **Realized P/L:** +$0.32 · **Open unrealized:** −$0.38 (MU, TSLA, INTC) · **Net:** ≈ −$0.06 (account ~$49.94)
+**Started:** 2026-08-07 · **Trades to date:** 97 · **Realized P/L:** −$0.41 · **Open unrealized:** +$0.18 (TSLA, GME, SPCX) · **Net:** ≈ −$0.23 (account ~$49.74)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -95,15 +95,23 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 87 | 2026-09-11 | 09:51 | BUY  | AAPL | 0.026266 | $332.74  | $8.74  | |
 | 88 | 2026-09-11 | 11:41 | SELL | AAPL | 0.026266 | $334.96  | $8.80  | +$0.06 |
 | 89 | 2026-09-11 | 11:52 | BUY  | INTC | 0.058920 | $103.70  | $6.11  | *(open)* |
+| 90 | 2026-09-14 | 09:30 | SELL | MU   | 0.006924 | $907.00  | $6.28  | −$0.78 |
+| 91 | 2026-09-14 | 09:31 | SELL | INTC | 0.058920 | $95.25   | $5.61  | −$0.50 |
+| 92 | 2026-09-14 | 09:42 | BUY  | META | 0.014685 | $662.57  | $9.73  | |
+| 93 | 2026-09-14 | 11:33 | BUY  | GME  | 0.315425 | $21.59   | $6.81  | *(open)* |
+| 94 | 2026-09-16 | 15:21 | SELL | META | 0.014685 | $672.89  | $9.88  | +$0.15 |
+| 95 | 2026-09-17 | 09:32 | BUY  | AMD  | 0.021359 | $529.04  | $11.30 | |
+| 96 | 2026-09-17 | 13:31 | SELL | AMD  | 0.021359 | $547.39  | $11.69 | +$0.39 |
+| 97 | 2026-09-17 | 14:12 | BUY  | SPCX | 0.051085 | $154.84  | $7.91  | *(open)* |
 
 ## Realized P/L by name (closed positions)
 
 | Symbol | Realized P/L |
 |:------:|:------------:|
 | SMCI | **+$1.07** |
-| MU (round-trips) | +$0.85 |
 | IREN | +$0.64 |
 | MRVL (2 round-trips) | +$0.50 |
+| AMD | +$0.39 |
 | DELL | +$0.36 |
 | ZETA | +$0.35 |
 | BMNR | +$0.29 |
@@ -113,31 +121,33 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | MSTR | +$0.11 |
 | RKLB | +$0.09 |
 | TSM | +$0.08 |
+| MU (round-trips, closed) | +$0.07 |
 | AAPL | +$0.06 |
-| NVDA (round-trips, closed) | −$0.05 |
 | PLTR (net of 4 round-trips) | +$0.05 |
 | WEN | +$0.02 |
 | NNE | −$0.03 |
 | MRK | −$0.03 |
+| NVDA (round-trips, closed) | −$0.05 |
 | MRNA | −$0.20 |
 | AA | −$0.28 |
-| HOOD (3 round-trips) | −$1.01 |
 | AG | −$0.29 |
 | SMR | −$0.29 |
-| TSLA | −$0.52 |
+| META (2 round-trips, closed) | −$0.39 |
+| INTC | −$0.50 |
+| TSLA (closed round-trip) | −$0.52 |
 | ASTS | −$0.53 |
-| META | −$0.54 |
 | NBIS (4 round-trips) | −$0.81 |
-| **Total realized** | **+$0.32** |
+| HOOD (3 round-trips) | −$1.01 |
+| **Total realized** | **−$0.41** |
 
-## Open positions (as of 2026-09-12)
+## Open positions (as of 2026-09-19)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| MU   | 0.006924 | ~$7.06 | ~$6.75 | −$0.31 |
-| TSLA | 0.012848 | ~$4.72 | ~$4.70 | −$0.02 |
-| INTC | 0.058920 | ~$6.11 | ~$6.06 | −$0.05 |
-| **Total** | | **~$17.89** | **~$17.51** | **−$0.38** |
+| TSLA | 0.012848 | ~$4.72 | ~$4.68 | −$0.04 |
+| GME  | 0.315425 | ~$6.81 | ~$7.13 | +$0.32 |
+| SPCX | 0.051085 | ~$7.91 | ~$7.80 | −$0.11 |
+| **Total** | | **~$19.44** | **~$19.62** | **+$0.18** |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -180,3 +190,12 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 - **MU / TSLA / INTC** — three new end-of-week holds funded from the closed names; all three sit slightly underwater at Friday's mark (−$0.38 combined).
 
 **Takeaway (through 2026-09-12):** cumulative realized rises to **+$0.32** — Week 5 was the best trading week yet on realized P/L (+$0.23, 14 fills, 7 round-trips, 4 winners / 3 losers). But the three fresh holds (MU, TSLA, INTC) carry −$0.38 unrealized, so net sits at ≈ −$0.06 and the account dipped just under the line to ~$49.94 (−0.11% vs the $50 start), still trailing SPY and QQQ over the benchmark window. The realized book keeps grinding positive; the open-position marks are what pulled the headline value below $50.
+
+### Week 6 (2026-09-14 → 2026-09-19)
+- **MU** (this week −$0.78; name now +$0.07 cumulative) — the carried-in hold (bought 09-09 ~$1,019.62) slid through the week and was cut 09-14 ~$907.00 for the week's biggest loss, erasing most of MU's prior sell-high/buy-low gains.
+- **INTC** (−$0.50) — the other carried-in hold (bought 09-11 ~$103.70) closed 09-14 ~$95.25; INTC's first and only round-trip, taken at a loss.
+- **META** (this week +$0.15; name now −$0.39 cumulative) — a fresh two-day round-trip (bought 09-14 ~$662.57, sold 09-16 ~$672.89), clawing back part of the −$0.54 close from Week 4.
+- **AMD** (+$0.39) — the week's best trade and AMD's debut: a same-day round-trip 09-17 (~$529.04 → ~$547.39).
+- **GME / SPCX** — two new end-of-week holds funded from the closed names; GME (bought 09-14 ~$21.59) is +$0.32 unrealized, SPCX (bought 09-17 ~$154.84) −$0.11. TSLA is carried over from Week 5, roughly flat.
+
+**Takeaway (through 2026-09-19):** cumulative realized turns negative for the first time at **−$0.41** — Week 6 was the worst realized week yet (−$0.73, 8 fills, 4 round-trips, 2 winners / 2 losers), driven entirely by unwinding the MU (−$0.78) and INTC (−$0.50) carries; the AMD (+$0.39) and META (+$0.15) round-trips softened but couldn't offset it. Three open holds (TSLA, GME, SPCX) now carry +$0.18 unrealized — the first green open book in weeks, led by GME (+$0.32). Net sits at ≈ −$0.23 and the account eased to ~$49.74 (−0.53% vs the $50 start), widening the lag to both SPY and QQQ. This week the realized book took the hit while the open marks finally turned positive — the mirror image of Week 5.
