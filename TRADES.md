@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 111 · **Realized P/L:** +$0.64 · **Open unrealized:** −$0.03 (NVDA, AMD, MSFT) · **Net:** ≈ +$0.61 (account ~$50.63)
+**Started:** 2026-08-07 · **Trades to date:** 123 · **Realized P/L:** +$0.50 · **Open unrealized:** −$0.10 (NVDA, MU, AMD) · **Net:** ≈ +$0.40 (account ~$50.39)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -117,6 +117,18 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 109 | 2026-09-25 | 09:34 | BUY  | MSFT | 0.016139 | $508.68  | $8.21  | *(open)* |
 | 110 | 2026-09-25 | 11:41 | SELL | AMD  | 0.010370 | $627.10  | $6.50  | +$0.17 |
 | 111 | 2026-09-25 | 12:14 | BUY  | AMD  | 0.009115 | $630.76  | $5.75  | *(open)* |
+| 112 | 2026-09-28 | 09:31 | SELL | MSFT | 0.016139 | $503.24  | $8.12  | −$0.09 |
+| 113 | 2026-09-28 | 09:52 | BUY  | AAPL | 0.024168 | $342.60  | $8.28  | |
+| 114 | 2026-09-28 | 10:12 | SELL | AMD  | 0.009115 | $607.72  | $5.54  | −$0.21 |
+| 115 | 2026-09-28 | 15:21 | SELL | AAPL | 0.024168 | $338.59  | $8.18  | −$0.10 |
+| 116 | 2026-09-29 | 09:34 | BUY  | MU   | 0.011599 | $1064.74 | $12.35 | |
+| 117 | 2026-09-29 | 10:34 | BUY  | AMD  | 0.013998 | $617.20  | $8.64  | |
+| 118 | 2026-10-01 | 10:01 | SELL | MU   | 0.011599 | $1039.00 | $12.05 | −$0.30 |
+| 119 | 2026-10-01 | 13:33 | BUY  | MU   | 0.005627 | $1075.12 | $6.05  | *(open)* |
+| 120 | 2026-10-02 | 10:51 | SELL | AMD  | 0.013998 | $639.41  | $8.95  | +$0.31 |
+| 121 | 2026-10-02 | 11:12 | SELL | NVDA | 0.039639 | $235.08  | $9.32  | +$0.25 |
+| 122 | 2026-10-02 | 12:02 | BUY  | NVDA | 0.033277 | $235.90  | $7.85  | *(open)* |
+| 123 | 2026-10-02 | 12:22 | BUY  | AMD  | 0.008667 | $634.57  | $5.50  | *(open)* |
 
 ## Realized P/L by name (closed positions)
 
@@ -124,26 +136,27 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 |:------:|:------------:|
 | SMCI | **+$1.07** |
 | IREN (2 round-trips) | +$0.68 |
-| AMD (2 round-trips) | +$0.56 |
+| AMD (4 round-trips) | +$0.66 |
 | MRVL (2 round-trips) | +$0.50 |
-| MU (round-trips, closed) | +$0.46 |
 | GME | +$0.39 |
 | DELL | +$0.36 |
 | ZETA | +$0.35 |
 | BMNR | +$0.29 |
+| NVDA (round-trips, closed) | +$0.20 |
 | CRM | +$0.18 |
+| MU (round-trips, closed) | +$0.16 |
 | TEM | +$0.14 |
 | CBOE | +$0.12 |
 | MSTR | +$0.11 |
 | RKLB | +$0.09 |
 | TSM | +$0.08 |
-| AAPL | +$0.06 |
 | PLTR (net of 4 round-trips) | +$0.05 |
 | WEN | +$0.02 |
 | SPCX | −$0.03 |
 | NNE | −$0.03 |
 | MRK | −$0.03 |
-| NVDA (round-trips, closed) | −$0.05 |
+| AAPL (2 round-trips) | −$0.04 |
+| MSFT | −$0.09 |
 | MRNA | −$0.20 |
 | AA | −$0.28 |
 | AG | −$0.29 |
@@ -154,16 +167,16 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | ASTS | −$0.53 |
 | NBIS (4 round-trips) | −$0.81 |
 | HOOD (3 round-trips) | −$1.01 |
-| **Total realized** | **+$0.64** |
+| **Total realized** | **+$0.50** |
 
-## Open positions (as of 2026-09-26)
+## Open positions (as of 2026-10-03)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| NVDA | 0.039639 | ~$9.07 | ~$8.92 | −$0.15 |
-| AMD  | 0.009115 | ~$5.75 | ~$5.75 | $0.00 |
-| MSFT | 0.016139 | ~$8.21 | ~$8.33 | +$0.12 |
-| **Total** | | **~$23.03** | **~$23.00** | **−$0.03** |
+| NVDA | 0.033277 | ~$7.85 | ~$7.79 | −$0.06 |
+| MU   | 0.005627 | ~$6.05 | ~$6.02 | −$0.03 |
+| AMD  | 0.008667 | ~$5.50 | ~$5.49 | −$0.01 |
+| **Total** | | **~$19.40** | **~$19.30** | **−$0.10** |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -227,3 +240,12 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 - **NVDA / MSFT** — two new large-cap holds funded from the closed names (NVDA bought 09-22 ~$228.81; MSFT bought 09-25 ~$508.68).
 
 **Takeaway (through 2026-09-26):** cumulative realized swings back to **+$0.64** — Week 7 was the best realized week yet (+$1.05, 14 fills, 7 round-trips, 5 winners / 1 loser / 1 scratch). The agent cleanly unwound all three carried-in holds (TSLA/GME green, SPCX ~flat) and layered on winning round-trips in MU and AMD. Three fresh large-cap holds (NVDA, AMD, MSFT) carry −$0.03 unrealized at Friday's mark, so net sits at ≈ +$0.61 and the account rose to ~$50.63 (+1.26% vs the $50 start). On the benchmark window it moved back ahead of SPY (+0.52 pts) but a strong QQQ run (+4.35% from the 08-22 baseline) leaves it −3.09 pts behind the Nasdaq proxy. The mirror of Week 6: this time the realized book did the work.
+
+### Week 8 (2026-09-28 → 2026-10-03)
+- **MSFT** (−$0.09) — the carried-in hold from Week 7 (bought 09-25 ~$508.68) was closed 09-28 ~$503.24 for a small loss; MSFT's first and only round-trip.
+- **AMD** (this week net +$0.10; name now +$0.66 cumulative across 4 round-trips) — the carried-in lot (bought 09-25 ~$630.76) was cut 09-28 ~$607.72 for −$0.21, then a fresh lot bought 09-29 ~$617.20 was sold 10-02 ~$639.41 for +$0.31 (the week's best trade); a third lot was re-entered 10-02 ~$634.57 (open).
+- **AAPL** (this week −$0.10; name now −$0.04 cumulative) — a same-day round-trip that didn't work: bought 09-28 ~$342.60, sold ~$338.59 the same afternoon.
+- **MU** (this week −$0.30; name now +$0.16 cumulative) — bought 09-29 ~$1,064.74 and cut 10-01 ~$1,039.00 for the week's biggest loss, then re-entered a smaller lot ~$1,075.12 later that day (open).
+- **NVDA** (this week +$0.25; name now +$0.20 cumulative) — the carried-in hold (bought 09-22 ~$228.81) was sold 10-02 ~$235.08 for a gain, then immediately re-entered a larger lot ~$235.90 (open).
+
+**Takeaway (through 2026-10-03):** cumulative realized eases to **+$0.50** — Week 8 was a slightly-red trading week (−$0.14, 12 fills, 6 round-trips, 2 winners / 4 losers). The agent unwound all three carried-in holds (MSFT −$0.09 and the carried AMD lot −$0.21 small losses, NVDA +$0.25 green) and ran two fresh same-week attempts: a losing AAPL day-trade (−$0.10) and a cut-then-re-entered MU (−$0.30), while a clean AMD swing (+$0.31) was the standout. Three open holds (NVDA, MU, AMD) carry −$0.10 unrealized, all marked within a cent or two of cost, so net sits at ≈ +$0.40 and the account eased to ~$50.39 (+0.78% vs the $50 start) from ~$50.63. On the benchmark window it stayed a hair ahead of SPY (+0.26 pts) but slipped further behind a strong QQQ (+5.06% from the 08-22 baseline, −4.29 pts). A quiet consolidation week after Week 7's run.
