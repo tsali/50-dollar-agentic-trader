@@ -1,0 +1,160 @@
+<style>
+  :root{
+    --bg:#FAFAF7; --panel:#FFFFFF; --ink:#191C1E; --muted:#5D6468; --faint:#8A9196;
+    --line:#E4E3DC; --line2:#EFEEE8;
+    --accent:#196B66; --accent-soft:#E2F0EE;
+    --up:#287A4E; --down:#B0453B;
+    --mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Charter", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0E1113; --panel:#161A1D; --ink:#E9ECEA; --muted:#9AA3A5; --faint:#6B7476;
+      --line:#262C30; --line2:#1D2225; --accent:#54C9BE; --accent-soft:#14312E;
+      --up:#54C98A; --down:#E07065;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1113; --panel:#161A1D; --ink:#E9ECEA; --muted:#9AA3A5; --faint:#6B7476;
+    --line:#262C30; --line2:#1D2225; --accent:#54C9BE; --accent-soft:#14312E;
+    --up:#54C98A; --down:#E07065;
+  }
+  :root[data-theme="light"]{
+    --bg:#FAFAF7; --panel:#FFFFFF; --ink:#191C1E; --muted:#5D6468; --faint:#8A9196;
+    --line:#E4E3DC; --line2:#EFEEE8; --accent:#196B66; --accent-soft:#E2F0EE;
+    --up:#287A4E; --down:#B0453B;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg); color:var(--ink); font-family:var(--sans);
+    line-height:1.66; margin:0; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px; margin:0 auto; padding:56px 22px 80px;}
+  .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 18px;}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(30px,6vw,46px); line-height:1.1;
+    letter-spacing:-.01em; text-wrap:balance; margin:0 0 14px;}
+  .dek{font-family:var(--serif); font-style:italic; font-size:clamp(17px,2.6vw,20px);
+    color:var(--muted); margin:0 0 30px;}
+  h2{font-family:var(--serif); font-weight:600; font-size:clamp(21px,3.4vw,27px); line-height:1.2;
+    letter-spacing:-.01em; margin:46px 0 14px; text-wrap:balance;}
+  p{margin:0 0 17px; font-size:17px;}
+  strong{font-weight:650; color:var(--ink);}
+  a{color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px;}
+  .lede p{font-size:18.5px;}
+
+  /* result strip */
+  .result{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line);
+    border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:0 0 34px;}
+  .result .cell{background:var(--panel); padding:16px 14px; text-align:center;}
+  .result .lab{font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--faint); margin:0 0 7px;}
+  .result .val{font-family:var(--mono); font-size:clamp(19px,4.2vw,25px); font-weight:600;
+    font-variant-numeric:tabular-nums; color:var(--ink);}
+  .result .val.up{color:var(--up);} .result .val.down{color:var(--down);}
+
+  /* callout findings */
+  .find{border-left:3px solid var(--accent); background:var(--accent-soft);
+    padding:3px 18px; border-radius:0 8px 8px 0; margin:0 0 16px;}
+  .find p{margin:13px 0;}
+
+  /* table */
+  .tablewrap{overflow-x:auto; margin:22px 0 10px; border:1px solid var(--line); border-radius:10px;}
+  table{border-collapse:collapse; width:100%; font-family:var(--mono);
+    font-variant-numeric:tabular-nums; font-size:13.5px; min-width:520px;}
+  caption{caption-side:bottom; text-align:left; color:var(--faint); font-family:var(--sans);
+    font-size:12.5px; padding:10px 4px 0; line-height:1.5;}
+  th,td{padding:9px 12px; border-bottom:1px solid var(--line2); text-align:right; white-space:nowrap;}
+  th{color:var(--muted); font-weight:600; font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+    border-bottom:1px solid var(--line);}
+  td:first-child,th:first-child,td:nth-child(2),th:nth-child(2){text-align:left;}
+  tbody tr:nth-child(even){background:var(--line2);}
+  tbody tr:last-child{font-weight:650;}
+  tbody tr:last-child td{border-top:2px solid var(--line); border-bottom:none; color:var(--ink);}
+  .up{color:var(--up);} .down{color:var(--down);}
+
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0;}
+  .foot{font-family:var(--mono); font-size:13px; color:var(--muted); line-height:1.7;
+    font-variant-numeric:tabular-nums;}
+  ul{padding-left:20px; margin:0 0 17px;} li{margin:0 0 9px; font-size:17px;}
+</style>
+
+<article class="wrap">
+  <p class="eyebrow">Post-mortem &middot; agentic trading</p>
+  <h1>The $50 Agentic Trader: What Two Months of Autonomous AI Trading Actually Taught Us</h1>
+  <p class="dek">Honest numbers, no hype, every red week included.</p>
+
+  <div class="result">
+    <div class="cell"><div class="lab">Start &rarr; End</div><div class="val">$50.00 &rarr; $50.71</div></div>
+    <div class="cell"><div class="lab">Return</div><div class="val up">+1.42%</div></div>
+    <div class="cell"><div class="lab">vs QQQ</div><div class="val down">~ -4.3 pts</div></div>
+  </div>
+
+  <div class="lede">
+  <h2 style="margin-top:0">TL;DR</h2>
+  <p>We gave an AI agent a real ~$50 brokerage account and let it trade the entire stock market on its own for two months, with a strict risk ruleset and a public, tamper-evident record of every decision. It started at $50.00 on August 7, 2026 and finished at $50.71 on October 14, 2026: <strong>+1.42%</strong>. Over that same window it roughly tied SPY and trailed QQQ by about 4.3 percentage points while the Nasdaq ran.</p>
+  <p>So did it beat the market? No. Did it prove something more interesting? Yes. Across <strong>1,321 logged decisions and 164 trades</strong>, it stayed completely disciplined, honored every risk rule, logged a reason for everything, and never blew up. The headline finding in one line: <strong>agentic is not the same as alpha.</strong> The autonomy and the audit trail worked beautifully. The returns did not. And that gap is the whole lesson.</p>
+  </div>
+
+  <h2>What we did</h2>
+  <p>We opened a tiny real brokerage account (real money, small enough to be honest about, real enough to matter) and handed the trading decisions to an LLM agent. Not a backtest, not paper money, not a simulation. Real fills, real slippage, real emotions-free execution, run out in the open.</p>
+  <p>Two deliberate design choices made it an <em>experiment</em> rather than a toy:</p>
+  <ul>
+    <li><strong>Real money, small stakes.</strong> ~$50. You cannot fudge a live brokerage statement, and the small size kept us honest: no survivorship bias, no "I would have sold there," no cherry-picking.</li>
+    <li><strong>Full-universe picks, zero values filter.</strong> The agent chose from the <em>entire</em> market with no blocklist and no exclusions. Intentional: the operator's personal convictions were kept completely out of the agent's decision set, so the data stayed clean. The agent was free to buy names the operator personally would never touch. It did. An <em>unconstrained</em> agent was the point.</li>
+  </ul>
+  <p>Everything (every trade, every position, every change to the logic) was logged with timestamps and versioned in git, published publicly with no account numbers, names, or credentials.</p>
+
+  <h2>How it worked</h2>
+  <ul>
+    <li><strong>The agent loop.</strong> Each run it pulled live quotes and technical indicators, checked open positions against its rules, and decided to hold, add, trim, or rotate. It typically held a name a few days. Active management, not buy-and-hold.</li>
+    <li><strong>A hard risk framework.</strong> A -10% stop on every position (the ruin-preventer), a circuit breaker, a dry-powder rule keeping at least 30% of the account and $15 in cash at all times (never fully deployed), a three-position cap, a $35 floor that triggers a HALT, and a kill switch. Later we added a re-entry discipline rule: re-buy a name you just sold and if price is below the prior exit, the stop tightens to 3 to 5% instead of the loose 10%.</li>
+    <li><strong>A separate idea-finder ("the Scout"),</strong> carrying the operator's personal values, kept entirely apart from the trading agent. Two separate systems on purpose.</li>
+    <li><strong>A public, tamper-evident record.</strong> A weekly value log, a trade-by-trade file, per-week writeups, and 1,321 decisions in a local database. Weekly updates generated automatically, committed append-only, so the record cannot be quietly rewritten.</li>
+  </ul>
+
+  <h2>The numbers</h2>
+  <div class="tablewrap">
+  <table>
+    <caption>vs SPY / QQQ is the account's return minus the index's return over the same window (a percentage-point gap), baselined 2026-08-22.</caption>
+    <thead><tr><th>Week</th><th>Date</th><th>Value</th><th>vs start</th><th>vs SPY</th><th>vs QQQ</th></tr></thead>
+    <tbody>
+      <tr><td>Start</td><td>08-07</td><td>~$50.00</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>1</td><td>08-18</td><td>~$49.78</td><td class="down">-0.4%</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>2</td><td>08-22</td><td>~$50.44</td><td class="up">+0.9%</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>3</td><td>08-29</td><td>~$50.00</td><td>+0.0%</td><td class="down">-1.35%</td><td class="down">-1.29%</td></tr>
+      <tr><td>4</td><td>09-05</td><td>~$50.16</td><td class="up">+0.3%</td><td class="down">-0.28%</td><td class="down">-0.48%</td></tr>
+      <tr><td>5</td><td>09-12</td><td>~$49.94</td><td class="down">-0.1%</td><td class="down">-0.79%</td><td class="down">-1.19%</td></tr>
+      <tr><td>6</td><td>09-19</td><td>~$49.74</td><td class="down">-0.5%</td><td class="down">-0.87%</td><td class="down">-2.51%</td></tr>
+      <tr><td>7</td><td>09-26</td><td>~$50.63</td><td class="up">+1.3%</td><td class="up">+0.52%</td><td class="down">-3.09%</td></tr>
+      <tr><td>8</td><td>10-03</td><td>~$50.39</td><td class="up">+0.8%</td><td class="up">+0.26%</td><td class="down">-4.29%</td></tr>
+      <tr><td>Final</td><td>10-14</td><td>$50.71</td><td class="up">+1.42%</td><td>~flat</td><td class="down">behind</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>The account spent the entire experiment inside a roughly $49.70 to $50.63 band. It never ran away in either direction. Meanwhile QQQ rose about +5% off the 08-22 baseline. A person who did nothing but buy QQQ and watch Netflix beat the agent.</p>
+
+  <h2>What we actually discovered</h2>
+  <p>This is the part worth reading.</p>
+  <div class="find"><p><strong>1. Agentic is not alpha.</strong> An autonomous, rule-following, tirelessly-attentive AI agent, given a real account and full market access, produced a flat return while a passive index rose. Intelligence in <em>execution</em> did not translate into an <em>edge</em>. The ability to trade is not the ability to win.</p></div>
+  <div class="find"><p><strong>2. Death by a thousand round-trips.</strong> 164 trades, dozens of them small same-week round-trips. Individually most were tiny wins or tiny losses. Collectively, the churn, slippage, and whipsaw stop-outs ground the net to near zero. Activity felt like progress and produced almost none.</p></div>
+  <div class="find"><p><strong>3. The dry-powder rule was a double-edged sword.</strong> Keeping 30%+ in cash is a genuinely good ruin-preventer, and it worked: the account never cratered. But in a rising market, never being fully invested is a permanent drag. The safety that protects you in a crash costs you the rally. You cannot have one without paying for the other.</p></div>
+  <div class="find"><p><strong>4. Discipline was the real success.</strong> Across 1,321 decisions the agent never ignored a stop, never over-concentrated, never revenge-traded, never went on tilt, never did anything reckless with real money. Every action had a logged, timestamped reason. Can an AI agent manage real money responsibly, auditably, without a human babysitting it? Emphatically yes. That is arguably the entire point.</p></div>
+  <div class="find"><p><strong>5. The unconstrained agent behaved differently than its operator would.</strong> Freed from the operator's values, it bought names the operator finds distasteful and would never own. The data stayed clean, and it surfaced a real question for anyone deploying autonomous agents with money: whose values govern the agent, and what happens when "optimal" and "acceptable" diverge?</p></div>
+  <div class="find"><p><strong>6. Transparency is the product.</strong> The most valuable artifact here is not the +1.42%. It is the honest, append-only, red-weeks-included record. Almost nobody publishes the boring reality of a trading bot, especially the losing weeks. This one did, every week, which is the only way the findings above mean anything.</p></div>
+
+  <h2>Why it matters</h2>
+  <p>The AI-trading space is drowning in "I turned $X into $100X" claims and precisely zero audit trails. This experiment is the opposite: a small, real, fully-logged proof that a disciplined autonomous agent is <strong>credible</strong> (it will not blow up your account) and <strong>not magic</strong> (it will not beat the index by trading more). Both halves are worth knowing before anyone scales it up with serious money.</p>
+
+  <h2>What's next: the rework</h2>
+  <p>The experiment ended not because it failed but because it answered its question. V2 changes the hypothesis based on what we learned:</p>
+  <ul>
+    <li><strong>Trade far less.</strong> The churn was the enemy. Fewer, higher-conviction positions held longer, not daily rotation.</li>
+    <li><strong>Deploy more fully, or admit you are an index.</strong> If the agent cannot beat buy-and-hold while hamstrung by a 30% cash drag, V2 tests whether a more fully-invested, trend-following stance can, or whether the honest answer is "just index."</li>
+    <li><strong>Measure against the right benchmark from day one.</strong> Beating a flat line is meaningless; beating QQQ, net of churn, is the only bar that counts.</li>
+    <li><strong>Keep the discipline and the public record.</strong> Those worked. They stay.</li>
+  </ul>
+  <p>The $50 agent did exactly what a good experiment should: it gave us a clean, honest answer, including the parts we did not want to hear. On to real trading, with eyes open.</p>
+
+  <hr>
+  <p class="foot">Final account value 2026-10-14: $50.71 from a $50.00 start.<br>1,321 logged decisions &middot; 164 trades &middot; 0 blow-ups &middot; 10 weeks, every one of them public.</p>
+</article>
