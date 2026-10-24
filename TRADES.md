@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 123 · **Realized P/L:** +$0.50 · **Open unrealized:** −$0.10 (NVDA, MU, AMD) · **Net:** ≈ +$0.40 (account ~$50.39)
+**Started:** 2026-08-07 · **Trades to date:** 141 · **Realized P/L:** +$0.64 · **Open unrealized:** −$0.93 (META) · **Net:** ≈ −$0.29 (account ~$49.71)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -129,35 +129,57 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 121 | 2026-10-02 | 11:12 | SELL | NVDA | 0.039639 | $235.08  | $9.32  | +$0.25 |
 | 122 | 2026-10-02 | 12:02 | BUY  | NVDA | 0.033277 | $235.90  | $7.85  | *(open)* |
 | 123 | 2026-10-02 | 12:22 | BUY  | AMD  | 0.008667 | $634.57  | $5.50  | *(open)* |
+| 124 | 2026-10-06 | 15:42 | SELL | MU    | 0.005627 | $1048.34 | $5.90  | −$0.15 |
+| 125 | 2026-10-07 | 09:31 | SELL | AMD   | 0.008667 | $638.64  | $5.54  | +$0.04 |
+| 126 | 2026-10-07 | 11:13 | BUY  | MU    | 0.010357 | $1071.72 | $11.10 | |
+| 127 | 2026-10-07 | 14:23 | BUY  | MSFT  | 0.014622 | $531.39  | $7.77  | |
+| 128 | 2026-10-08 | 09:32 | SELL | NVDA  | 0.033277 | $234.62  | $7.81  | −$0.04 |
+| 129 | 2026-10-08 | 09:32 | SELL | MU    | 0.010357 | $1081.54 | $11.20 | +$0.10 |
+| 130 | 2026-10-08 | 09:53 | BUY  | PLTR  | 0.035307 | $201.09  | $7.10  | |
+| 131 | 2026-10-08 | 12:42 | BUY  | RDDT  | 0.031712 | $156.72  | $4.97  | |
+| 132 | 2026-10-09 | 15:12 | SELL | RDDT  | 0.031712 | $160.30  | $5.08  | +$0.11 |
+| 133 | 2026-10-09 | 15:14 | BUY  | GOOGL | 0.026136 | $351.23  | $9.18  | |
+| 134 | 2026-10-12 | 10:11 | SELL | PLTR  | 0.035307 | $207.19  | $7.32  | +$0.22 |
+| 135 | 2026-10-12 | 13:43 | BUY  | META  | 0.008592 | $748.29  | $6.43  | *(open)* |
+| 136 | 2026-10-12 | 14:41 | SELL | MSFT  | 0.014622 | $538.89  | $7.88  | +$0.11 |
+| 137 | 2026-10-12 | 15:43 | BUY  | MSFT  | 0.008335 | $539.89  | $4.50  | |
+| 138 | 2026-10-13 | 10:21 | SELL | GOOGL | 0.026136 | $352.24  | $9.21  | +$0.03 |
+| 139 | 2026-10-13 | 10:34 | BUY  | RDDT  | 0.056992 | $161.95  | $9.23  | |
+| 140 | 2026-10-13 | 12:04 | SELL | MSFT  | 0.008335 | $545.53  | $4.55  | +$0.05 |
+| 141 | 2026-10-13 | 14:01 | SELL | RDDT  | 0.056992 | $156.36  | $8.91  | −$0.32 |
+
+*Rows #124–#141 (weeks ending 10-10 and 10-17) were added on 2026-10-24. They were missing from this file even though the 10-17 week page said they had been backfilled. They match the live order history. No trades were made 2026-10-14 → 2026-10-24.*
 
 ## Realized P/L by name (closed positions)
 
 | Symbol | Realized P/L |
 |:------:|:------------:|
 | SMCI | **+$1.07** |
+| AMD (5 round-trips) | +$0.70 |
 | IREN (2 round-trips) | +$0.68 |
-| AMD (4 round-trips) | +$0.66 |
 | MRVL (2 round-trips) | +$0.50 |
 | GME | +$0.39 |
 | DELL | +$0.36 |
 | ZETA | +$0.35 |
 | BMNR | +$0.29 |
-| NVDA (round-trips, closed) | +$0.20 |
+| PLTR (net of 5 round-trips) | +$0.27 |
 | CRM | +$0.18 |
-| MU (round-trips, closed) | +$0.16 |
+| NVDA (round-trips, closed) | +$0.16 |
 | TEM | +$0.14 |
 | CBOE | +$0.12 |
 | MSTR | +$0.11 |
+| MU (round-trips, closed) | +$0.11 |
 | RKLB | +$0.09 |
 | TSM | +$0.08 |
-| PLTR (net of 4 round-trips) | +$0.05 |
+| MSFT (3 round-trips) | +$0.07 |
+| GOOGL | +$0.03 |
 | WEN | +$0.02 |
 | SPCX | −$0.03 |
 | NNE | −$0.03 |
 | MRK | −$0.03 |
 | AAPL (2 round-trips) | −$0.04 |
-| MSFT | −$0.09 |
 | MRNA | −$0.20 |
+| RDDT (2 round-trips) | −$0.21 |
 | AA | −$0.28 |
 | AG | −$0.29 |
 | SMR | −$0.29 |
@@ -167,16 +189,16 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | ASTS | −$0.53 |
 | NBIS (4 round-trips) | −$0.81 |
 | HOOD (3 round-trips) | −$1.01 |
-| **Total realized** | **+$0.50** |
+| **Total realized** | **+$0.64** |
 
-## Open positions (as of 2026-10-03)
+*Each name's row is rounded to the cent, so the rows may not add up exactly to the total. The total is +$0.50 through 10-03 plus the exact +$0.137 realized on 10-06 → 10-13.*
+
+## Open positions (as of 2026-10-24)
 
 | Symbol | Shares | Cost | Now | Unrealized |
 |:------:|-------:|-----:|----:|:----------:|
-| NVDA | 0.033277 | ~$7.85 | ~$7.79 | −$0.06 |
-| MU   | 0.005627 | ~$6.05 | ~$6.02 | −$0.03 |
-| AMD  | 0.008667 | ~$5.50 | ~$5.49 | −$0.01 |
-| **Total** | | **~$19.40** | **~$19.30** | **−$0.10** |
+| META | 0.008592 | ~$6.43 | ~$5.50 | −$0.93 |
+| **Total** | | **~$6.43** | **~$5.50** | **−$0.93** |
 
 ## Per-Position Reasoning (the agent's own logic)
 
@@ -249,3 +271,12 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 - **NVDA** (this week +$0.25; name now +$0.20 cumulative) — the carried-in hold (bought 09-22 ~$228.81) was sold 10-02 ~$235.08 for a gain, then immediately re-entered a larger lot ~$235.90 (open).
 
 **Takeaway (through 2026-10-03):** cumulative realized eases to **+$0.50** — Week 8 was a slightly-red trading week (−$0.14, 12 fills, 6 round-trips, 2 winners / 4 losers). The agent unwound all three carried-in holds (MSFT −$0.09 and the carried AMD lot −$0.21 small losses, NVDA +$0.25 green) and ran two fresh same-week attempts: a losing AAPL day-trade (−$0.10) and a cut-then-re-entered MU (−$0.30), while a clean AMD swing (+$0.31) was the standout. Three open holds (NVDA, MU, AMD) carry −$0.10 unrealized, all marked within a cent or two of cost, so net sits at ≈ +$0.40 and the account eased to ~$50.39 (+0.78% vs the $50 start) from ~$50.63. On the benchmark window it stayed a hair ahead of SPY (+0.26 pts) but slipped further behind a strong QQQ (+5.06% from the 08-22 baseline, −4.29 pts). A quiet consolidation week after Week 7's run.
+
+### Weeks 9–10 (2026-10-05 → 2026-10-17), backfilled
+- **Week 9** (10 fills, 5 round-trips, +$0.06): the NVDA/MU/AMD holds carried in from Week 8 were all closed: MU −$0.15, NVDA −$0.04, AMD +$0.04. A one-day MU swing (≈$1,072 → ≈$1,082) made +$0.10, and RDDT (≈$156.72 → ≈$160.30) made +$0.11. The week ended holding MSFT, PLTR and GOOGL. No value or benchmark snapshot was captured for this week.
+- **Week 10** (8 fills, 5 round-trips, +$0.08): the MSFT, PLTR and GOOGL holds were all closed green: PLTR +$0.22, MSFT +$0.11, GOOGL +$0.03. An MSFT re-entry added +$0.05. An RDDT re-entry was cut the same day for −$0.32. META was bought 10-12 at ≈$748.29 and stayed open.
+
+### Week 11 (2026-10-19 → 2026-10-24)
+- **No trades.** The agent held META and ~$44 cash. META fell to ≈$640, a −$0.93 open loss (about −14.5% from entry). That is much bigger than the 3–5% stops the agent used on other names this month, and there is no exit order on record.
+
+**Takeaway (through 2026-10-24):** cumulative realized is **+$0.64** across 141 fills. The one open hold (META, −$0.93) pulls net to ≈ −$0.29, and the account is ~$49.71 (−0.58% vs the $50 start). It is slightly ahead of SPY (+0.18 pts) and QQQ (+0.68 pts) only because both indexes fell from the 08-22 baseline while the account sat mostly in cash.
