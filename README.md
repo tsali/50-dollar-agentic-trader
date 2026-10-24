@@ -1,5 +1,7 @@
 # The $50 Agentic Trader
 
+> **This experiment has concluded (2026-10-14). It continues as V2: [tsali/agentic-trader-v2](https://github.com/tsali/agentic-trader-v2)**, a rebuilt "trading desk" agent that aims to beat QQQ instead of just behaving safely. See the [post-mortem](POSTMORTEM.md) for why V1 went flat.
+
 An honest, public, weekly-tracked experiment: a **~$50 brokerage account traded by an AI agent**, run out in the open so anyone can watch what actually happens.
 
 No hype. No "I turned $50 into $50,000." Just a tiny real account, a simple disciplined strategy, an AI agent executing it, and a public log of every week — wins, losses, and any change to the logic.

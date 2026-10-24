@@ -1,5 +1,8 @@
 # Logic Changelog
 
+## 2026-10-24: Successor
+- The experiment continues as V2 at https://github.com/tsali/agentic-trader-v2 (same account, $100 added, new strategy).
+
 Every *deliberate* change to the trading logic, with the reasoning and (as data accrues) the **measured effect.** Changes are made rarely and on purpose — not to chase short-term noise.
 
 ### v1.0 — 2026-08-07 (inception)
