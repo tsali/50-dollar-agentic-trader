@@ -2,7 +2,7 @@
 
 Every trade the agent has made since inception, oldest first. All orders were placed autonomously by the AI agent (market orders, fractional shares, zero commission). Times are US Eastern. **No account identifiers, balances beyond the ~$50 notional, or personal data are published.**
 
-**Started:** 2026-08-07 · **Trades to date:** 141 · **Realized P/L:** +$0.64 · **Open unrealized:** −$0.93 (META) · **Net:** ≈ −$0.29 (account ~$49.71)
+**Started:** 2026-08-07 · **Ended:** 2026-10-26 (continues as [V2](https://github.com/tsali/agentic-trader-v2)) · **Trades to date:** 142 · **Realized P/L:** −$0.35 · **Open unrealized:** $0.00 (no positions) · **Net:** ≈ −$0.35 (account ~$49.65)
 
 | # | Date | Time (ET) | Action | Symbol | Shares | Price | ~Amount | Round-trip P/L |
 |--:|------|-----------|:------:|:------:|-------:|------:|--------:|:--------------:|
@@ -147,6 +147,7 @@ Every trade the agent has made since inception, oldest first. All orders were pl
 | 139 | 2026-10-13 | 10:34 | BUY  | RDDT  | 0.056992 | $161.95  | $9.23  | |
 | 140 | 2026-10-13 | 12:04 | SELL | MSFT  | 0.008335 | $545.53  | $4.55  | +$0.05 |
 | 141 | 2026-10-13 | 14:01 | SELL | RDDT  | 0.056992 | $156.36  | $8.91  | −$0.32 |
+| 142 | 2026-10-26 | 09:41 | SELL | META | 0.008592 | $633.65 | $5.44 | −$0.99 |
 
 *Rows #124–#141 (weeks ending 10-10 and 10-17) were added on 2026-10-24. They were missing from this file even though the 10-17 week page said they had been backfilled. They match the live order history. No trades were made 2026-10-14 → 2026-10-24.*
 
@@ -280,3 +281,9 @@ Drawn from the agent's decision log — *why* it made each move. Order IDs and a
 - **No trades.** The agent held META and ~$44 cash. META fell to ≈$640, a −$0.93 open loss (about −14.5% from entry). That is much bigger than the 3–5% stops the agent used on other names this month, and there is no exit order on record.
 
 **Takeaway (through 2026-10-24):** cumulative realized is **+$0.64** across 141 fills. The one open hold (META, −$0.93) pulls net to ≈ −$0.29, and the account is ~$49.71 (−0.58% vs the $50 start). It is slightly ahead of SPY (+0.18 pts) and QQQ (+0.68 pts) only because both indexes fell from the 08-22 baseline while the account sat mostly in cash.
+
+### Week 12 (2026-10-26 → 2026-10-31) — V1 close-out
+- **META** (−$0.99; name now −$1.38 cumulative) — the 10-12 hold (≈$748.37 avg) was sold at the open on 10-26 at ≈$633.65, about −15.3% from entry. The account was moving to V2 at the time. This closed V1's last position.
+- The account's only other fill this week was an XLE buy funded by the $100 V2 deposit. It belongs to [V2](https://github.com/tsali/agentic-trader-v2) and is not listed here.
+
+**Final V1 tally:** 142 fills, cumulative realized **−$0.35**, no open positions, final value ~$49.65 (−0.69% vs the $50 start). Ahead of SPY (+0.61 pts) and QQQ (+2.51 pts) on the 08-22 window only because the account held mostly cash while both indexes fell. V1 broke even, give or take, and the META hold the stops never caught is the main reason it finished red.
